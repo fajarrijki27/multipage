@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #0073e6;
+    padding: 2rem 0;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-text .btn {
+    background-color: #ff9900;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+#cta {
+    padding: 2rem;
+    text-align: center;
+    background-color: #0073e6;
+    color: #fff;
+}
+
+#cta .btn {
+    background-color: #ff9900;
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem
+    
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #003366;
+    color: #fff;
+    position: relative;
+}
+.majors {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.majors h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.major-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.card h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+.major-detail {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.major-detail h3 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.major-detail p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.majors {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.majors h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+/* Tambahkan gaya untuk membuat <a> berperilaku seperti blok (kartu) */
+.major-cards a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Kartu jurusan */
+.major-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    color: #003366;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Responsif: Tampilan kolom dalam grid di layar lebih besar */
+@media (min-width: 768px) {
+    .major-cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 30%;
+    }
+}
+
+
+/* Responsif: Tampilan kolom dalam grid di layar lebih besar */
+@media (min-width: 768px) {
+    .major-cards {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 30%;
+    }
+    
+}
